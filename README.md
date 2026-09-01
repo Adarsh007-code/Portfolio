@@ -1,4 +1,4 @@
-# 👋 Personal Portfolio
+# 👋 Portfolio
 
 A modern, responsive personal portfolio website showcasing my skills, projects, education, and journey as a Computer Science student.
 
