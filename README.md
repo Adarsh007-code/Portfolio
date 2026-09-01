@@ -1,20 +1,20 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 👋 Personal Portfolio
 
-# Run and deploy your AI Studio app
+### 🌐 [View Live Portfolio](https://chic-daifuku-87c2d5.netlify.app)
 
-This contains everything you need to run your app locally.
+A modern, responsive personal portfolio website showcasing my skills, projects, education, and journey as a Computer Science student.
 
-View your app in AI Studio: https://ai.studio/apps/228e756e-6809-4faf-9b16-ba67c3017224
+---
 
-## Run Locally
+## 🚀 About
 
-**Prerequisites:**  Node.js
+Hi! I'm **Adarsh**, a Computer Science student passionate about **Cybersecurity, Software Development, and Data Structures & Algorithms**.
 
+This portfolio is designed to provide a central place to explore my:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- 💻 Technical skills
+- 🚀 Projects
+- 🎓 Education
+- 🧠 DSA journey
+- 📚 Current learning
+- 📫 Contact information
