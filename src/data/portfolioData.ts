@@ -214,6 +214,22 @@ export const PROJECTS_DATA: ProjectItem[] = [
     isPlayable: true,
   },
   {
+    id: 'know-your-rights',
+    title: 'Know Your Rights',
+    tagline: 'Legal Awareness Web Application',
+    description:
+      'A legal awareness web application designed to help users understand their legal rights, explore relevant laws, and learn the appropriate first steps to take in common legal situations. It aims to make legal information more accessible through a user-friendly interface.',
+    technologies: ['Web Application', 'Legal Awareness', 'Interactive UI', 'Responsive Design'],
+    type: 'completed',
+    demoUrl: 'https://adarsh007-code.github.io/Know-Your-Rights/',
+    highlights: [
+      'Legal rights navigation and law discovery in plain terms',
+      'Clear first steps guidance for common legal situations',
+      'Accessible, user-friendly interface for citizens',
+    ],
+    isPlayable: false,
+  },
+  {
     id: 'upcoming-security-project',
     title: 'More Projects Coming Soon...',
     tagline: 'In Development / Future Security Tool',
@@ -295,7 +311,8 @@ export const TERMINAL_PRESETS: Record<string, string[]> = {
   ],
   projects: [
     '1. Number Guessing Game (Java) - Practice Java loops, conditionals & input handling',
-    '2. More Projects Coming Soon... (Currently building)',
+    '2. Know Your Rights - Legal awareness web application for citizens',
+    '3. More Projects Coming Soon... (Currently building)',
   ],
   contact: [
     'Email: codeadarsh24@gmail.com',

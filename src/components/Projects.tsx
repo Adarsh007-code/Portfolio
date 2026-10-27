@@ -6,12 +6,12 @@ import {
   Code2,
   Gamepad2,
   RefreshCw,
-  Sparkles,
-  ChevronRight,
-  Layers,
   Terminal,
-  Check,
   PlusCircle,
+  Scale,
+  Github,
+  BookOpen,
+  CheckCircle2,
 } from 'lucide-react';
 
 export const Projects: React.FC = () => {
@@ -335,53 +335,252 @@ public class NumberGuessingGame {
           </div>
         </div>
 
-        {/* Future Projects Placeholders Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Upcoming Project 1 */}
-          <div className="p-6 rounded-2xl bg-white/[0.02] border border-dashed border-white/15 hover:border-[#00FF41]/40 transition-all duration-300 flex flex-col justify-between space-y-4">
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <div className="w-10 h-10 rounded-xl bg-[#0c0c0c] border border-white/10 flex items-center justify-center text-[#00FF41]">
-                  <Terminal className="w-5 h-5" />
-                </div>
-                <span className="px-2.5 py-0.5 rounded-full text-[11px] font-mono bg-[#00FF41]/10 text-[#00FF41] border border-[#00FF41]/30">
-                  Upcoming Exploration
+        {/* Featured Project 2: Know Your Rights (Full-Width Showcase) */}
+        <div className="rounded-2xl bg-[#0c0c0c] border border-[#00FF41]/30 shadow-[0_0_30px_rgba(0,255,65,0.05)] overflow-hidden backdrop-blur-xl group transition-all duration-300">
+          {/* Top Bar with Project Metadata */}
+          <div className="p-6 sm:p-8 border-b border-white/10 bg-[#121212] flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div className="space-y-2">
+              <div className="flex items-center gap-3">
+                <span className="px-3 py-1 rounded-full bg-[#00FF41]/10 border border-[#00FF41]/30 text-[#00FF41] text-xs font-mono font-semibold">
+                  Featured Web Project
                 </span>
+                <span className="text-xs font-mono text-white/40">Legal Awareness &amp; Digital Access to Justice</span>
               </div>
-              <h4 className="text-lg font-bold text-white font-['Outfit',sans-serif]">
-                Network Security / Port Scanner Utility
-              </h4>
-              <p className="text-white/50 text-xs sm:text-sm leading-relaxed">
-                Planned exploratory project investigating socket programming, TCP handshake inspection, and basic host discovery tools as part of networking coursework.
+              <h3 className="text-2xl sm:text-3xl font-bold text-white font-['Outfit',sans-serif]">
+                Know Your Rights
+              </h3>
+              <p className="text-white/60 text-sm max-w-2xl leading-relaxed">
+                Know Your Rights is a legal awareness web application designed to help users understand their legal rights, explore relevant laws, and identify the appropriate first steps to take in common legal situations. The project aims to make legal information accessible and understandable through an intuitive, user-friendly interface.
               </p>
             </div>
-            <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs font-mono text-white/40">
-              <span>Stack: Java / C / Sockets</span>
-              <span className="text-[#00FF41]">In Design Phase</span>
+
+            {/* Quick Actions in Header */}
+            <div className="flex items-center gap-2 self-start md:self-auto">
+              <a
+                href="https://adarsh007-code.github.io/Know-Your-Rights/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 rounded-lg bg-[#00FF41] hover:bg-[#00dd39] text-[#050505] text-xs font-mono font-bold flex items-center gap-2 transition-all cursor-pointer shadow-[0_0_15px_rgba(0,255,65,0.2)]"
+              >
+                <span>Explore Live Project</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+              <a
+                href="https://github.com/Adarsh007-code/Know-Your-Rights"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-white text-xs font-mono flex items-center gap-2 transition-all cursor-pointer"
+              >
+                <Github className="w-3.5 h-3.5 text-[#00FF41]" />
+                <span>View Source Code</span>
+              </a>
             </div>
           </div>
 
-          {/* Upcoming Project 2 */}
-          <div className="p-6 rounded-2xl bg-white/[0.02] border border-dashed border-white/15 hover:border-[#00FF41]/40 transition-all duration-300 flex flex-col justify-between space-y-4">
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <div className="w-10 h-10 rounded-xl bg-[#0c0c0c] border border-white/10 flex items-center justify-center text-[#00FF41]">
-                  <PlusCircle className="w-5 h-5" />
+          {/* Detailed Content Grid */}
+          <div className="p-6 sm:p-8 bg-[#0c0c0c]">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              {/* Left Column: Key Architecture & Implementation Highlights */}
+              <div className="lg:col-span-7 space-y-5">
+                <h4 className="text-base font-bold text-white font-['Outfit',sans-serif] flex items-center gap-2">
+                  <Scale className="w-4 h-4 text-[#00FF41]" />
+                  Key Architecture &amp; Implementation Highlights
+                </h4>
+                <ul className="space-y-3.5 text-sm text-white/70">
+                  <li className="flex items-start gap-2.5">
+                    <span className="text-[#00FF41] font-mono font-bold mt-0.5">&gt;</span>
+                    <span>
+                      <strong className="text-white">Legal Awareness:</strong> Helps users explore legal topics and understand their rights in common situations.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="text-[#00FF41] font-mono font-bold mt-0.5">&gt;</span>
+                    <span>
+                      <strong className="text-white">Guided Legal Assistance:</strong> Presents relevant information and suggested first steps to help users understand how to approach a legal issue.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="text-[#00FF41] font-mono font-bold mt-0.5">&gt;</span>
+                    <span>
+                      <strong className="text-white">Law &amp; Topic Discovery:</strong> Makes it easier to explore relevant laws and legal subjects.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="text-[#00FF41] font-mono font-bold mt-0.5">&gt;</span>
+                    <span>
+                      <strong className="text-white">User-Friendly Interface:</strong> Organizes legal information into a clear, accessible experience with a responsive design.
+                    </span>
+                  </li>
+                </ul>
+
+                {/* Technology Tags */}
+                <div className="pt-2">
+                  <span className="text-[11px] font-mono uppercase tracking-wider text-white/40 block mb-2.5">
+                    Stack &amp; Capabilities
+                  </span>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      'Web Application',
+                      'Legal Awareness',
+                      'Interactive UI',
+                      'Responsive Design',
+                      'React',
+                      'TypeScript',
+                      'Tailwind CSS',
+                    ].map((t) => (
+                      <span
+                        key={t}
+                        className="px-2.5 py-1 rounded-md bg-white/[0.03] border border-white/10 text-xs font-mono text-[#00FF41]"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <span className="px-2.5 py-0.5 rounded-full text-[11px] font-mono bg-[#00FF41]/10 text-[#00FF41] border border-[#00FF41]/30">
-                  In Progress
-                </span>
+
+                {/* Bottom Action Row for Mobile / Prominence */}
+                <div className="pt-2 flex flex-wrap items-center gap-3">
+                  <a
+                    href="https://adarsh007-code.github.io/Know-Your-Rights/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 rounded-lg bg-[#00FF41] hover:bg-[#00dd39] text-[#050505] text-xs font-mono font-bold flex items-center gap-2 transition-all cursor-pointer shadow-[0_0_15px_rgba(0,255,65,0.2)]"
+                  >
+                    <span>Explore Live Project</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                  <a
+                    href="https://github.com/Adarsh007-code/Know-Your-Rights"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-white text-xs font-mono flex items-center gap-2 transition-all cursor-pointer"
+                  >
+                    <Github className="w-3.5 h-3.5 text-[#00FF41]" />
+                    <span>View Source Code</span>
+                  </a>
+                </div>
               </div>
-              <h4 className="text-lg font-bold text-white font-['Outfit',sans-serif]">
-                More Projects Coming Soon...
-              </h4>
-              <p className="text-white/50 text-xs sm:text-sm leading-relaxed">
-                Building actively as my 2nd-year studies and DSA journey progress. New repositories for cybersecurity tools and Java algorithms will be documented here.
-              </p>
+
+              {/* Right Column: Project-Specific Verified Summary Panel */}
+              <div className="lg:col-span-5 p-5 sm:p-6 rounded-xl bg-[#141414] border border-[#00FF41]/20 font-mono text-xs space-y-4">
+                <div className="flex items-center justify-between pb-2 border-b border-white/10 text-white/40">
+                  <span className="flex items-center gap-1.5 text-white/70">
+                    <BookOpen className="w-3.5 h-3.5 text-[#00FF41]" />
+                    <span>Project Dossier</span>
+                  </span>
+                  <span className="text-[#00FF41] text-[11px] font-bold">ONLINE DESK</span>
+                </div>
+
+                <div className="space-y-3 text-white/70 leading-relaxed font-sans text-xs">
+                  <div className="p-3 rounded-lg bg-black/40 border border-white/5 space-y-1 font-mono">
+                    <div className="text-[11px] text-white/40 uppercase tracking-wider">Mission Statement</div>
+                    <div className="text-white/90 text-xs">
+                      Democratizing legal comprehension &amp; reducing information asymmetry for everyday citizens.
+                    </div>
+                  </div>
+
+                  <div className="space-y-2 pt-1">
+                    <div className="text-[11px] font-mono text-white/40 uppercase tracking-wider">
+                      Core Functional Areas
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 font-mono text-[11px]">
+                      <div className="p-2.5 rounded-lg bg-white/[0.02] border border-white/5 flex items-start gap-2">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#00FF41] mt-0.5 shrink-0" />
+                        <div>
+                          <div className="text-white font-medium">Topic Discovery</div>
+                          <div className="text-white/40 text-[10px]">Consumer, cyber, labor &amp; civil rights</div>
+                        </div>
+                      </div>
+                      <div className="p-2.5 rounded-lg bg-white/[0.02] border border-white/5 flex items-start gap-2">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#00FF41] mt-0.5 shrink-0" />
+                        <div>
+                          <div className="text-white font-medium">First-Step Guidance</div>
+                          <div className="text-white/40 text-[10px]">48-hour action checklist &amp; forums</div>
+                        </div>
+                      </div>
+                      <div className="p-2.5 rounded-lg bg-white/[0.02] border border-white/5 flex items-start gap-2">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#00FF41] mt-0.5 shrink-0" />
+                        <div>
+                          <div className="text-white font-medium">Statute Reference</div>
+                          <div className="text-white/40 text-[10px]">Verified enactments &amp; legal sections</div>
+                        </div>
+                      </div>
+                      <div className="p-2.5 rounded-lg bg-white/[0.02] border border-white/5 flex items-start gap-2">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#00FF41] mt-0.5 shrink-0" />
+                        <div>
+                          <div className="text-white font-medium">Free Aid Access</div>
+                          <div className="text-white/40 text-[10px]">Directions to NALSA &amp; DLSA authorities</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="pt-2 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-white/40">
+                    <span>Target Deployment:</span>
+                    <span className="text-[#00FF41]">GitHub Pages (Active)</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs font-mono text-white/40">
-              <span>Continuously Building</span>
-              <span className="text-[#00FF41]">Stay Tuned</span>
+          </div>
+        </div>
+
+        {/* Upcoming Projects Section */}
+        <div className="space-y-4">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-[#00FF41]" />
+            <h4 className="text-sm font-mono uppercase tracking-wider text-white/60">
+              Future Tools &amp; Explorations
+            </h4>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Upcoming Project 1 */}
+            <div className="p-6 rounded-2xl bg-white/[0.02] border border-dashed border-white/15 hover:border-[#00FF41]/40 transition-all duration-300 flex flex-col justify-between space-y-4">
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="w-10 h-10 rounded-xl bg-[#0c0c0c] border border-white/10 flex items-center justify-center text-[#00FF41]">
+                    <Terminal className="w-5 h-5" />
+                  </div>
+                  <span className="px-2.5 py-0.5 rounded-full text-[11px] font-mono bg-[#00FF41]/10 text-[#00FF41] border border-[#00FF41]/30">
+                    Upcoming Exploration
+                  </span>
+                </div>
+                <h4 className="text-lg font-bold text-white font-['Outfit',sans-serif]">
+                  Network Security / Port Scanner Utility
+                </h4>
+                <p className="text-white/50 text-xs sm:text-sm leading-relaxed">
+                  Planned exploratory project investigating socket programming, TCP handshake inspection, and basic host discovery tools as part of networking coursework.
+                </p>
+              </div>
+              <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs font-mono text-white/40">
+                <span>Stack: Java / C / Sockets</span>
+                <span className="text-[#00FF41]">In Design Phase</span>
+              </div>
+            </div>
+
+            {/* Upcoming Project 2 */}
+            <div className="p-6 rounded-2xl bg-white/[0.02] border border-dashed border-white/15 hover:border-[#00FF41]/40 transition-all duration-300 flex flex-col justify-between space-y-4">
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="w-10 h-10 rounded-xl bg-[#0c0c0c] border border-white/10 flex items-center justify-center text-[#00FF41]">
+                    <PlusCircle className="w-5 h-5" />
+                  </div>
+                  <span className="px-2.5 py-0.5 rounded-full text-[11px] font-mono bg-[#00FF41]/10 text-[#00FF41] border border-[#00FF41]/30">
+                    In Progress
+                  </span>
+                </div>
+                <h4 className="text-lg font-bold text-white font-['Outfit',sans-serif]">
+                  More Projects Coming Soon...
+                </h4>
+                <p className="text-white/50 text-xs sm:text-sm leading-relaxed">
+                  Building actively as my 2nd-year studies and DSA journey progress. New repositories for cybersecurity tools and Java algorithms will be documented here.
+                </p>
+              </div>
+              <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs font-mono text-white/40">
+                <span>Continuously Building</span>
+                <span className="text-[#00FF41]">Stay Tuned</span>
+              </div>
             </div>
           </div>
         </div>
